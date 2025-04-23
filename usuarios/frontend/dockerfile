@@ -1,0 +1,11 @@
+# Usa la imagen oficial de nginx
+FROM nginx:alpine
+
+# Elimina el contenido por defecto de nginx
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copia el contenido del frontend al contenedor
+COPY . /usr/share/nginx/html
+
+# Expone el puerto 80 para el servidor web
+EXPOSE 80
