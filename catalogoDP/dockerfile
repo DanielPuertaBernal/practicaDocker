@@ -1,0 +1,11 @@
+# 1) Imagen base nginx ligera
+FROM nginx:alpine
+
+# 2) Copia tu carpeta 'app' completa al directorio que Nginx sirve
+COPY /app /usr/share/nginx/html
+
+# docker run -d `
+#   -p 8080:80 `
+#   -v "C:\Users\danie\IdeaProjects\practicaDocker\catalogoDP\app:/usr/share/nginx/html:ro" `
+#   --name catalogo-dev `
+#   catalogodp:latest
