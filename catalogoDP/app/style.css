@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #ff4c4c;
+  }
+  
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .juego {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 76, 76, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .juego:hover {
+    transform: scale(1.03);
+  }
+  
+  .juego img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .juego h2 {
+    margin: 15px;
+    font-size: 1.2rem;
+    color: #ffdf6b;
+  }
+  
+  .juego p {
+    margin: 0 15px 15px;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #888;
+  }
+  
